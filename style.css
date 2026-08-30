@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    border: 0px solid black;
+    box-shadow: 0px 0px 20px 0px black;
+  .links {
+    background-color: whitesmoke;
+    width: 100%;
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: 26px;
+      width: 100%;
+      justify-content: center;
+
+      li {
+        list-style: none;
+        padding: 14px;
+        a {
+          text-decoration: none;
+          color: #444;
+
+        }
+      }
+    }
+  }
+  .logo {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    span {
+      padding: 10px;
+
+      h2 {
+        color: white;
+      }
+    }
+  }
+}
