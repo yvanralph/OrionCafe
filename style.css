@@ -1,15 +1,18 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 nav {
-    border: 0px solid black;
-    box-shadow: 0px 0px 20px 0px black;
+  border: 0px solid black;
+  background-color: black;
+  box-shadow: 0px 0px 20px 0px black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+
   .links {
-    background-color: whitesmoke;
-    width: 100%;
     ul {
       display: flex;
       flex-direction: row;
@@ -19,24 +22,53 @@ nav {
 
       li {
         list-style: none;
-        padding: 14px;
+        padding: 24px;
         a {
           text-decoration: none;
-          color: #444;
-
+          color: white;
         }
       }
     }
   }
   .logo {
-    background-color: black;
-    width: 100%;
     text-align: center;
     span {
       padding: 10px;
 
       h2 {
         color: white;
+        font-size: 28px;
+        font-family: "Brush Script MT", cursive;
+      }
+    }
+  }
+}
+
+main {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    background: rgb(205, 166, 99);
+    .heroImg {
+      margin-top: 30px;
+      img {
+        height: 500px;
+      }
+    }
+    .heroText {
+      h2 {
+        margin-top: 200px;
+        font-size: 30px;
+        label {
+          font-family: "Brush Script MT", cursive;
+          font-size: 70px;
+        }
+      }
+      p {
+        margin-top: 15px;
+        font-size: 17px;
+        max-width: 660px;
       }
     }
   }
