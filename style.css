@@ -52,18 +52,13 @@ main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
-        background: rgb(205, 166, 99);
-
-        .heroImg {
-            margin-top: 30px;
-
-            img {
-                height: 500px;
-            }
-        }
+        /*background: rgb(205, 166, 99);*/
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("src/home.jpg");
+        height: 65vh;
 
         .heroText {
             h2 {
+                color: white;
                 margin-top: 200px;
                 font-size: 30px;
 
@@ -74,30 +69,58 @@ main {
             }
 
             p {
+                color: white;
                 margin-top: 15px;
                 font-size: 17px;
-                max-width: 660px;
+                max-width: 700px;
             }
         }
     }
 
     .menu {
         text-align: center;
+        justify-items: center;
         padding: 25px;
 
+        h2 {
+            margin-top: 40px;
+            font-size: 33px;
+        }
+
         .menuCards {
-            display: grid;
-            gap: 100px;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
             padding: 20px;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 30px;
 
             .card {
-                background-color: whitesmoke;
+                /*background-color: whitesmoke;*/
+                width: 180px;
+                height: 200px;
                 border-radius: 10px;
                 padding: 20px;
-                box-shadow: 2px 10px 9px 0 black;
+                border: 0 solid white;
+                box-shadow: 0 0 3px 0 black;
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+
+                h3 {
+                    margin-top: 20px;
+                }
+
+                p {
+                    margin-top: 10px;
+                }
             }
 
+            .card:hover {
+                box-shadow: 0 0 15px 0 black;
+                transition: 0.7s;
+            }
         }
     }
 }
