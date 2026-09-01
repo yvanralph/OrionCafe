@@ -13,14 +13,14 @@
     </div>
     <div class="links">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 </nav>
 <main>
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="heroText">
             <h2>Welcome to <label>Orion Cafe</label></h2>
             <p>
@@ -30,7 +30,7 @@
             </p>
         </div>
     </section>
-    <section class="menu">
+    <section class="menu" id="menu">
         <h2>Our Menu</h2>
         <div class="menuCards">
             <div class="card">
@@ -60,6 +60,38 @@
             </div>
         </div>
     </section>
+
+    <section class="contact" id="contact">
+
+        <div class="info">
+            <h2>Visit us or Call us Today</h2>
+            <div class="opening">
+                <label>Opening Hours</label>
+                <p>Monday - Friday : <b>9am - 10pm</b></p>
+                <p>Saturday - Sunday :<b> 9am - 1am</b></p>
+                <br>
+                <p>Our Email: OrionCafe@gmail.com</p>
+                <p>Our Phone: 0798923992</p>
+            </div>
+            <br>
+
+            <form>
+                <input placeholder="Enter your Name" type="text"/><br>
+                <input placeholder="Enter your Email" type="email"/><br>
+                <textarea placeholder="Enter your Message"></textarea><br>
+                <button type="submit">Send</button>
+            </form>
+
+
+        </div>
+        <div class="image">
+            <img alt="beer image icon" src="src/contact.jpg"/>
+        </div>
+
+    </section>
 </main>
+<footer>
+    <p>All rights reserved Orion Cafe 2026 ©</p>
+</footer>
 </body>
 </html>

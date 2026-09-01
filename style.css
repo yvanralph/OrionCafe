@@ -110,6 +110,8 @@ main {
 
                 h3 {
                     margin-top: 20px;
+                    font-family: "Brush Script MT", cursive;
+                    font-size: 28px;
                 }
 
                 p {
@@ -123,4 +125,82 @@ main {
             }
         }
     }
+
+    .contact {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        gap: 70px;
+        margin-top: 100px;
+
+        .info {
+            h2 {
+                font-size: 30px;
+            }
+
+            .opening {
+                margin-top: 26px;
+                margin-bottom: 10px;
+
+                label {
+                    font-size: 38px;
+                    font-family: "Brush Script MT", cursive;
+                }
+            }
+
+            form {
+                input {
+                    border: 2px solid #444;
+                    width: 360px;
+                    height: 40px;
+                    margin-top: 10px;
+                    padding-left: 10px;
+                    border-radius: 5px;
+                }
+
+                textarea {
+                    border: 2px solid #444;
+                    width: 350px;
+                    height: 70px;
+                    margin-top: 10px;
+                    padding: 10px;
+                    border-radius: 5px;
+                }
+
+                button {
+                    float: right;
+                    padding: 2px;
+                    width: 100px;
+                    height: 30px;
+                    margin-top: 10px;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: black;
+                    color: white;
+                    box-shadow: 0 0 3px 0 black;
+                }
+
+                button:hover {
+                    background-color: white;
+                    color: black;
+                    transition: 0.4s;
+                }
+            }
+        }
+
+        .image {
+            img {
+                width: 400px;
+                height: 50vh;
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: 150px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
 }
